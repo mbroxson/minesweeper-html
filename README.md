@@ -2,6 +2,7 @@
 Below are the requirements for this code example that I did.
 
 Time to complete required with all bonus: 2.5 hours
+
 Time to add additional functionality to make fully function game: 0.5 hours
 
 # Minesweeper Project
