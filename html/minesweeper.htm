@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" class="fontawesome-i2svg-pending">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv="CACHE-CONTROL" content="NO-CACHE">
+        <meta http-equiv="PRAGMA" content="NO-CACHE">
+        <meta http-equiv="EXPIRES" content="Thu, 29 Oct 1998 17:04:19 GMT">
+        <meta name="viewport" content="initial-scale=1.0">
+        <link rel="icon" type="image/png" href="../image/favicon.png">
+        
+        <link rel="stylesheet" href="../libs/foundation-6.4.2/css/foundation.css">
+        
+        <link rel="stylesheet" href="../style/minesweeper.css">
+        
+        <script async type="text/javascript" src="../libs/jquery-3.3.1.min.js"></script>
+        <script async type="text/javascript" src="../libs/foundation-6.4.2/js/vendor/foundation.js"></script>
+        <script defer type="text/javascript" src="../libs/fontawesome-pro-5.0.6/svg-with-js/js/fontawesome-all.min.js"></script>
+        
+        <script defer type="text/javascript" src="../js/minesweeper.js"></script>
+    </head>
+    <body>
+        <div class="reveal" id="modal_div" data-reveal>
+            <h2 id="modal_title"></h2>
+            <div id="modal_content"></div>
+            <button id="modal_button" class="close-button" data-close aria-label="Close modal" type="button">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="reveal tiny" id="new_game_div" data-reveal>
+            <h2>New Game</h2>
+            <label for="ng_rows">Rows:</label>
+            <input type="number" size="3" id="ng_rows">
+            <label for="ng_cols">Columns:</label>
+            <input type="number" size="3" id="ng_cols">
+            <label for="ng_mines">Mines:</label>
+            <input type="number" size="3" id="ng_mines">
+            <div class="button-group">
+                <div class="button" id="ng_button">Start New Game</div>
+                <div class="button" id="ng_cancel_button">Cancel</div>
+            </div>
+            <button class="close-button" data-close aria-label="Close modal" type="button">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="grid-x">
+            <div class="cell auto"></div>
+            <div class="cell medium-4 shrink">
+                <div class="button-group grid-x">
+                    <div id="mines_button" class="cell small-4 button secondary hollow">Mines Left: <span id="mines">0</span></div>
+                    <div id="new_game_button" class="cell small-4 button" data-open="new_game_div"><i class="fal fa-plus-circle"></i> New Game</div>
+                    <div id="counter_button" class="cell small-4 button secondary hollow">Time: <span id="time">0</span></div>
+                </div>
+            </div>
+            <div class="cell auto"></div>
+        </div>
+        <div class="grid-x">
+            <div class="cell auto"></div>
+            <div class="cell shrink text-center">
+                <div id="game_div"></div>
+            </div>
+            <div class="cell auto"></div>
+        </div>
+    </body>
+</html>

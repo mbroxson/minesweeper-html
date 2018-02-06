@@ -1,0 +1,24 @@
+*,
+html,
+body {
+    font-size: 14px;
+    font-family: font-family: Tahoma, Geneva, sans-serif;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+body { display: none; }
+.fontawesome-i2svg-active body { display: initial; }
+
+.mine_cell {
+    width: 3rem;
+    height: 3rem;
+    line-height: 3rem;
+    font-size: 2.5rem;
+    vertical-align: middle;
+    text-align: center;
+    margin: 0.15rem;
+    padding: 0px;
+    background: #9b7653;
+}
