@@ -133,6 +133,9 @@ function buildNewGame() {
     game.cells = [];
     game.lost = false;
     game.won = false;
+    if (time_interval)
+        clearInterval(time_interval);
+    time_interval = false;
     $('#time').text(0);
     $('#mines').text(game.num_mines);
     // randomly generate mines
